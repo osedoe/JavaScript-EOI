@@ -1,0 +1,48 @@
+/*** index.pcss ***/
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	& .box {
+		border: 2px solid darkgray;
+		background: lightblue;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 250px;
+		width: 800px;
+		padding: 2em;
+
+		& .dice-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			padding: 1em;
+			height: 140px;
+			width: 140px;
+
+			& .dice {
+				border: 2px solid black;
+				border-radius: 10px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 140px;
+				width: 140px;
+
+				& span {
+					font-size: 4em;
+				}
+			}
+
+			& button {
+				margin-top: 1em;
+			}
+		}
+	}
+}
