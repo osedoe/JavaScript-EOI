@@ -1,13 +1,26 @@
 /*** index.pcss ***/
+body {
+	background: wheat;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
+	& .button {
+		border: 0;
+		box-shadow: 0 0 6px black;
+		border-radius: 5px;
+		margin-top: 1em;
+		padding: 1em;
+		width: 100px;
+	}
+
 	& .box {
-		border: 2px solid darkgray;
-		background: lightblue;
+		background: burlywood;
+		border-radius: 5px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -23,12 +36,14 @@
 			align-items: center;
 			border-radius: 10px;
 			padding: 1em;
-			height: 140px;
+			height: 180px;
 			width: 140px;
 
 			& .dice {
-				border: 2px solid black;
-				border-radius: 10px;
+				background: lightyellow;
+				border: 1px solid darkgoldenrod;
+				border-radius: 5px;
+				box-shadow: 0 0 10px black;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -36,17 +51,22 @@
 				width: 140px;
 
 				& span {
+					color: darkgoldenrod;
+					text-shadow: 1px 1px 0 black;
 					font-size: 4em;
 				}
 			}
-
-			& button {
-				margin-top: 1em;
-			}
 		}
 	}
-}
 
-.rotate {
-	transform: rotate(360deg);
+	& .history-container {
+		background: lightyellow;
+		border: 1px solid darkgoldenrod;
+		border-radius: 5px;
+		box-shadow: 0 0 10px black;
+		color: darkgoldenrod;
+		font-size: 1.3em;
+		margin: 1em;
+		padding: 0.4em 1em;
+	}
 }
